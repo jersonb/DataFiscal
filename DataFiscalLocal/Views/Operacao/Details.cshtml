@@ -1,0 +1,58 @@
+﻿@model DataFiscal.Models.Operacao
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Operacao</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2 text-center ">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd class="col-sm-10 ">
+            @Html.DisplayTextFor(model => model.Descricao)
+        </dd>
+        <dt class="col-sm-1 ">
+            @Html.DisplayNameFor(model => model.Cfop)
+        </dt>
+        <dd class="col-sm-1 ">
+            @Html.DisplayFor(model => model.Cfop.Codigo)
+        </dd>
+        <dd class="col-sm-10 ">
+            @Html.DisplayTextFor(model => model.Cfop.Descricao)
+        </dd>
+        <dt class="col-sm-1">
+            @Html.DisplayNameFor(model => model.Cst)
+        </dt>
+        <dd class="col-sm-1">
+            @Html.DisplayFor(model => model.Origem.Codigo)
+            @Html.DisplayFor(model => model.Cst.Codigo)
+        </dd>
+        <dd class="col-sm-10">
+            @Html.DisplayTextFor(model => model.Origem.Descricao)
+            @Html.DisplayTextFor(model => model.Cst.Descricao)
+        </dd>
+        <dt class="col-sm-1">
+            @Html.DisplayNameFor(model => model.Ncm)
+        </dt>
+        <dd class="col-sm-1">
+            @Html.DisplayFor(model => model.Ncm.Codigo)
+        </dd>
+        <dd class="col-sm-10">
+            @Html.DisplayTextFor(model => model.Ncm.Descricao)
+        </dd>
+        <dt class="col-sm-1">
+            @Html.DisplayNameFor(model => model.Aliq)
+        </dt>
+        <dd class="col-sm-1">
+            @Html.DisplayFor(model => model.Aliq.VlAliquota)
+        </dd>
+        <dd class="col-sm-10">
+            @Html.DisplayTextFor(model => model.Aliq.Descricao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>

@@ -1,0 +1,8 @@
+﻿1|017|Aliquota do ICMS normal 17% no: Acre, Alagoas, Espírito Santo, Goiás, Mato Grosso, Mato Grosso do Sul, Pará, Roraima e Santa Catarina|0,170
+2|175|Aliquota do ICMS normal 17,5% em: Rondônia|0,175
+3|018|Aliquota do ICMS normal 18% no: Amazonas, Amapá, Bahia, Ceará, Distrito Federal, Maranhão, Minas Gerais, Paraíba, Paraná, Pernambuco, Piauí, Rio Grande do Norte, Rio Grande do Sul, São Paulo, Sergipe e Tocantins|0,180
+4|020|Aliquota do ICMS normal 20% no: Rio de Janeiro|0,200
+5|007|Alíquota do ICMS interestadual para as regiões Norte, Nordeste e Centro-Oeste e para o estado do Espírito Santo|0,700
+6|012|Alíquota do ICMS interestadual para as regiões Sul e Sudeste, com exceção do estado do Espírito Santo|0,120
+7|000|Alíquota zero de ICMS|0,000
+8|004|Alíquota de Importãção|0,040

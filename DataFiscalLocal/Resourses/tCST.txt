@@ -1,0 +1,11 @@
+﻿1|00|Tributada integralmente
+2|10|Tributada e com cobrança do ICMS por substituição tributária.
+3|20|Com redução de base de cálculo
+4|30|Isenta ou não tributada e com cobrança do ICMS por substituição tributária.
+5|40|Isenta – instrução normativa Fiscal FEDERAL E ESTADUAL (total isenção Federal e Estadual)
+6|41|Não Tributada
+7|50|Suspensão
+8|51|Diferimento (Ex. 33,33% base): Diferimento.
+9|60|ICMS cobrado anteriormente por substituição tributária.
+10|70|Com redução de base de cálculo e cobrança do ICMS por substituição tributária.
+11|90|Outras.

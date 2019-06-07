@@ -1,0 +1,59 @@
+﻿@model IEnumerable<DataFiscal.Models.Operacao>
+    <br />
+    <br />
+<h1>Operações a serem avaliadas</h1>
+<br />  
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cfop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrigemCst)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ncm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aliq)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cfop.Codigo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrigemCst)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ncm.Codigo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aliq.VlAliquota)
+                </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <div class="btn btn-outline-danger">
+                            <a asp-action="Edit" asp-route-id="@item.Id">Editar  </a>
+                        </div>
+                        <div class="btn btn-outline-info">
+                            <a asp-action="Details" asp-route-id="@item.Id">Detalhar</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
